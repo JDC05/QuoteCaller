@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: quote-caller
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TWILIO_FROM_NUMBER
+        sync: false
+      - key: MY_PHONE_NUMBER
+        sync: false
+      - key: WEBHOOK_BASE_URL
+        sync: false
+      - key: WAKING_HOUR_START
+        value: "8"
+      - key: WAKING_HOUR_END
+        value: "21"
+      - key: CALLS_PER_DAY
+        value: "3"
