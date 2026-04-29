@@ -118,7 +118,7 @@ app.post('/twiml', (req, res) => {
   const twiml = new twilio.twiml.VoiceResponse();
   twiml.pause({ length: 1 }); // brief pause before speaking
   twiml.say(
-    { voice: 'Google.en-GB-Neural2-B', language: 'en-GB' },
+    { voice: 'Google.en-GB-Chirp3-HD-Charon', language: 'en-GB' },
     quote
   );
   twiml.pause({ length: 1 });
